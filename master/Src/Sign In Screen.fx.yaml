@@ -1,0 +1,40 @@
+"'Sign In Screen' As screen":
+    BackgroundImage: ='trai-nghiem-choi-golf2'
+    Fill: =RGBA(0, 0, 0, 0)
+    ImagePosition: =ImagePosition.Fill
+
+    tInputUsername As text:
+        Default: =
+        HintText: ="Email"
+        X: =514
+        Y: =393
+        ZIndex: =2
+
+    tInputPassword As text:
+        Default: =
+        HintText: ="Mật khẩu"
+        Mode: =TextMode.Password
+        X: =514
+        Y: =452
+        ZIndex: =3
+
+    btnSignIn As button:
+        Fill: =RGBA(186, 155, 60, 1)
+        OnSelect: =Navigate('Main Screen')
+        Text: ="Đăng nhập"
+        X: =594
+        Y: =513
+        ZIndex: =4
+
+    imgSignIn As image:
+        Height: =165
+        Image: =kn_group_vietnam_logo
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =237
+        X: =555
+        Y: =208
+        ZIndex: =5
+

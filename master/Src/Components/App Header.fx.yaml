@@ -1,0 +1,98 @@
+"'App Header' As CanvasComponent":
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =64
+    Width: =768
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Container4 As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =65
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Container5 As groupContainer.horizontalAutoLayoutContainer:
+            BorderStyle: =BorderStyle.None
+            DropShadow: =DropShadow.None
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =1
+
+            imgLogo As image:
+                AlignInContainer: =AlignInContainer.Center
+                Height: =64
+                Image: ='logo-kngroup'
+                ImagePosition: =ImagePosition.Stretch
+                ZIndex: =1
+
+            lblLogo As label:
+                AlignInContainer: =AlignInContainer.Center
+                AutoHeight: =true
+                FontWeight: =FontWeight.Bold
+                Text: ="KN Group Vehicle Booking Management App"
+                Width: =300
+                ZIndex: =2
+
+        Container6 As groupContainer.horizontalAutoLayoutContainer:
+            BorderStyle: =BorderStyle.None
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width /5
+            ZIndex: =2
+
+            Container7 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                BorderStyle: =BorderStyle.None
+                DropShadow: =DropShadow.None
+                FillPortions: =0
+                Height: =48
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =0
+                LayoutMinWidth: =0
+                LayoutMode: =LayoutMode.Auto
+                Width: =imgAva.Width
+                ZIndex: =1
+
+                imgAva As image:
+                    Height: =32
+                    HoverFill: =Color.Red
+                    Image: =kn_group_vietnam_logo
+                    ImagePosition: =ImagePosition.Stretch
+                    Width: =48
+                    ZIndex: =1
+
+                lblUsername As label:
+                    Align: =Align.Center
+                    Height: =16
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverColor: =Color.Red
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =6
+                    Text: ="KN Staff"
+                    Width: =20
+                    ZIndex: =2
+
+            icoSettings As icon.Settings:
+                Height: =48
+                Icon: =Icon.Settings
+                ZIndex: =2
+
+            icoFAQ As icon.QuestionMark:
+                Height: =48
+                Icon: =Icon.QuestionMark
+                ZIndex: =3
+
